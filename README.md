@@ -13,4 +13,6 @@ the values that are being parsed from the response of the API.
 
 ## How to run and setup
 ### Services you will need:
+- This project is working with the free service of [OpenWeatherMap](https://openweathermap.org/guide) to use it the API key needs to be replaced with a personal one.
+- Then running the file with <code>npx expo start</code> should be done.
 
