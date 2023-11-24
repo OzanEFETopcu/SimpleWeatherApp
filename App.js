@@ -4,9 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import LocationInput from './Components/LocationInput';
 import MainPage from './Components/MainPage';
 import Header from './Components/Header';
+// Import the API key from the separate file
+import { OPEN_WEATHER_MAP_API_KEY } from './config';
 
 export default function App() {
 
+  const APIKEY = OPEN_WEATHER_MAP_API_KEY;
   const [cityName, setCityName] = useState('Tampere');
   const [weatherData, setWeatherData] = useState(null);
   useEffect(() => {
@@ -29,7 +32,7 @@ export default function App() {
       // Pass the weatherData to MainPage component
       setWeatherData(weatherData);
     } catch (error) {
-      console.error('Error fetching weather data:', error);
+      //console.error('Error fetching weather data:', error);
     }
   }
 
